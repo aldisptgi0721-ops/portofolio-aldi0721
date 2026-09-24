@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Pribadi Aldi Septiagi - Lulusan OTKP & Berpengalaman di Bidang CopyCenter, Administrasi, dan Logistik. Desain modern, aesthetic, elegan, simetris, dan responsif.">
+  <meta name="keywords" content="Aldi Septiagi, Portfolio, OTKP, CopyCenter, Staff Administrasi, PT Pos Indonesia, PT Bazic Sukses Abadi">
+  <meta name="author" content="Aldi Septiagi">
+  <title>Aldi Septiagi | Portfolio Pribadi</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-badge">AS</span>
+        <span class="brand-name">Aldi<span class="brand-accent">Septiagi</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Button & Hamburger -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm nav-btn">
+          <span>Hubungi Saya</span>
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Buka Menu Navigasi" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <span class="brand-badge">AS</span>
+        <span class="brand-name">Aldi<span class="brand-accent">Septiagi</span></span>
+      </div>
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Tutup Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#home" class="drawer-link active"><i data-lucide="home"></i> Home</a>
+      <a href="#about" class="drawer-link"><i data-lucide="user"></i> About Me</a>
+      <a href="#skills" class="drawer-link"><i data-lucide="layers"></i> Skills</a>
+      <a href="#projects" class="drawer-link"><i data-lucide="folder-kanban"></i> Projects</a>
+      <a href="#contact" class="drawer-link"><i data-lucide="mail"></i> Contact</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="https://wa.me/6285770441986" target="_blank" rel="noopener noreferrer" class="btn btn-wa btn-full">
+        <svg class="brand-svg-btn" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.16C10.57 20.16 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.05 20.16ZM16.57 14.39C16.32 14.27 15.11 13.67 14.88 13.59C14.66 13.51 14.49 13.47 14.33 13.72C14.16 13.97 13.69 14.52 13.55 14.69C13.4 14.85 13.26 14.88 13.01 14.75C12.76 14.63 11.97 14.37 11.03 13.53C10.29 12.87 9.8 12.06 9.65 11.81C9.51 11.56 9.64 11.43 9.76 11.31C9.87 11.2 10.01 11.02 10.14 10.87C10.26 10.72 10.3 10.62 10.38 10.45C10.47 10.29 10.43 10.14 10.36 10.02C10.3 9.9 9.8 8.68 9.6 8.18C9.39 7.69 9.19 7.76 9.04 7.75C8.9 7.74 8.73 7.74 8.57 7.74C8.4 7.74 8.13 7.8 7.9 8.05C7.67 8.3 7.02 8.91 7.02 10.15C7.02 11.39 7.92 12.58 8.05 12.75C8.17 12.92 9.83 15.48 12.37 16.58C12.97 16.84 13.44 17 13.81 17.11C14.42 17.31 14.97 17.28 15.41 17.21C15.9 17.14 16.92 16.6 17.13 16C17.34 15.41 17.34 14.9 17.28 14.8C17.22 14.69 17.06 14.63 16.81 14.51L16.57 14.39Z"/>
+        </svg>
+        <span>Chat via WhatsApp</span>
+      </a>
+      <div class="drawer-socials">
+        <a href="https://wa.me/6285770441986" target="_blank" rel="noopener" aria-label="WhatsApp" class="drawer-social-wa">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.16C10.57 20.16 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.05 20.16ZM16.57 14.39C16.32 14.27 15.11 13.67 14.88 13.59C14.66 13.51 14.49 13.47 14.33 13.72C14.16 13.97 13.69 14.52 13.55 14.69C13.4 14.85 13.26 14.88 13.01 14.75C12.76 14.63 11.97 14.37 11.03 13.53C10.29 12.87 9.8 12.06 9.65 11.81C9.51 11.56 9.64 11.43 9.76 11.31C9.87 11.2 10.01 11.02 10.14 10.87C10.26 10.72 10.3 10.62 10.38 10.45C10.47 10.29 10.43 10.14 10.36 10.02C10.3 9.9 9.8 8.68 9.6 8.18C9.39 7.69 9.19 7.76 9.04 7.75C8.9 7.74 8.73 7.74 8.57 7.74C8.4 7.74 8.13 7.8 7.9 8.05C7.67 8.3 7.02 8.91 7.02 10.15C7.02 11.39 7.92 12.58 8.05 12.75C8.17 12.92 9.83 15.48 12.37 16.58C12.97 16.84 13.44 17 13.81 17.11C14.42 17.31 14.97 17.28 15.41 17.21C15.9 17.14 16.92 16.6 17.13 16C17.34 15.41 17.34 14.9 17.28 14.8C17.22 14.69 17.06 14.63 16.81 14.51L16.57 14.39Z"/>
+          </svg>
+        </a>
+        <a href="https://instagram.com/sptgi19_" target="_blank" rel="noopener" aria-label="Instagram" class="drawer-social-ig">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <a href="mailto:akunkupro@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section" id="home">
+      <div class="hero-glow-blob hero-glow-1"></div>
+      <div class="hero-glow-blob hero-glow-2"></div>
+      <div class="container hero-container">
+        
+        <!-- Left Column: Hero Text -->
+        <div class="hero-content reveal-fade-up">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Siap Bekerja & Berkontribusi Maksimal</span>
+          </div>
+          <h1 class="hero-title">
+            Halo, Saya <span class="gradient-text">Aldi Septiagi</span>
+          </h1>
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">Spesialisasi: </span>
+            <span class="typewriter-text" id="typewriterText"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+          <p class="hero-description">
+            Lulusan SMK Pluit Raya Jurusan <strong>Otomatisasi & Tata Kelola Perkantoran (OTKP)</strong>. Memiliki pengalaman kerja profesional sebagai <strong>Staff CopyCenter di PT Bazic Sukses Abadi</strong> dan <strong>Staff Gudang & Logistik Surat di PT Pos Indonesia</strong>. Berdedikasi tinggi dengan prinsip <em>Ulet, Tekun, dan Cekatan</em>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Lihat Portofolio</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              <span>Tentang Saya</span>
+              <i data-lucide="user"></i>
+            </a>
+            <button class="btn btn-outline" id="viewCvHeroBtn">
+              <i data-lucide="file-text"></i>
+              <span>Lihat CV Lengkap</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column: Profile Image Card with Balanced Symmetrical Layout -->
+        <div class="hero-visual reveal-scale">
+          <div class="profile-card-wrapper">
+            <!-- Decorative concentric rings -->
+            <div class="profile-ring"></div>
+            <div class="profile-ring profile-ring-outer"></div>
+
+            <div class="profile-card">
+              <div class="profile-img-container">
+                <img src="assets/profile.jpg" alt="Foto Profil Aldi Septiagi" class="profile-img" onerror="this.onerror=null; this.src='assets/cv.jpg';">
+                <div class="profile-overlay"></div>
+              </div>
+              <div class="profile-info-mini">
+                <h3 class="profile-name">Aldi Septiagi</h3>
+                <p class="profile-role">CopyCenter & Administrasi Perkantoran</p>
+                <div class="profile-tags">
+                  <span class="tag">OTKP</span>
+                  <span class="tag">Logistik Surat</span>
+                  <span class="tag">Customer Service</span>
+                </div>
+              </div>
+
+              <!-- Symmetrical Badges docked neatly inside card -->
+              <div class="card-docked-badges">
+                <div class="docked-badge">
+                  <i data-lucide="award"></i>
+                  <span>Prinsip: Ulet, Tekun & Cekatan</span>
+                </div>
+                <div class="docked-badge">
+                  <i data-lucide="map-pin"></i>
+                  <span>Domisili: Penjaringan, Jakarta Utara</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Symmetrical Full-Width Stats Banner -->
+        <div class="hero-stats-banner reveal-fade-up">
+          <div class="stat-card">
+            <div class="stat-icon-wrapper"><i data-lucide="briefcase"></i></div>
+            <div class="stat-data">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Pengalaman Kerja & PKL</span>
+            </div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-icon-wrapper"><i data-lucide="check-circle-2"></i></div>
+            <div class="stat-data">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Ketelitian & Komitmen Mutu</span>
+            </div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <div class="stat-icon-wrapper"><i data-lucide="graduation-cap"></i></div>
+            <div class="stat-data">
+              <span class="stat-number">OTKP</span>
+              <span class="stat-label">Tata Kelola Perkantoran Modern</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ME SECTION ================= -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">
+            <i data-lucide="sparkles"></i>
+            <span>Mengenal Lebih Dekat</span>
+          </div>
+          <h2 class="section-title">Tentang <span class="gradient-text">Saya</span></h2>
+          <p class="section-subtitle">
+            Latar belakang pribadi, nilai kerja, dedikasi, serta riwayat pendidikan resmi saya.
+          </p>
+        </div>
+
+        <!-- Symmetrical 2x2 Balanced Grid Layout -->
+        <div class="about-grid-symmetric">
+          
+          <!-- Row 1 - Left: Profil & Ringkasan Diri -->
+          <div class="card about-card-symmetric reveal-fade-up">
+            <div class="card-icon-header">
+              <div class="icon-box"><i data-lucide="user-check"></i></div>
+              <div>
+                <h3 class="card-title">Profil & Ringkasan Diri</h3>
+                <p class="card-subtitle">Dedikasi, kompetensi, dan orientasi kerja</p>
+              </div>
+            </div>
+            <div class="card-content-body">
+              <p class="about-paragraph">
+                Nama saya <strong>Aldi Septiagi</strong>, lulusan SMK Pluit Raya Jurusan <strong>Otomatisasi dan Tata Kelola Perkantoran (OTKP)</strong>. Saya memiliki rekam jejak pengalaman kerja nyata sebagai <strong>Staff Gudang di PT Pos Indonesia</strong> dan sebagai <strong>CopyCenter di PT Bazic Sukses Abadi</strong>.
+              </p>
+              <p class="about-paragraph">
+                Saya terbiasa bekerja dengan standar ketelitian tinggi, cekatan dalam melayani kebutuhan dokumen pelanggan, serta disiplin dalam pengelolaan surat-menyurat dan barang inventaris. Dalam setiap pekerjaan yang diamanahkan, saya selalu berpegang teguh pada prinsip: <strong>Ulet, Tekun, dan Cekatan</strong>.
+              </p>
+            </div>
+            <div class="card-footer-action">
+              <button class="btn btn-primary btn-full" id="viewCvBtn">
+                <i data-lucide="eye"></i>
+                <span>Lihat Dokumen CV Lengkap</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Row 1 - Right: Informasi Data Diri with WhatsApp & Instagram Contact Links -->
+          <div class="card about-card-symmetric reveal-fade-up">
+            <div class="card-icon-header">
+              <div class="icon-box"><i data-lucide="id-card"></i></div>
+              <div>
+                <h3 class="card-title">Informasi Data Diri</h3>
+                <p class="card-subtitle">Biodata resmi & kontak langsung</p>
+              </div>
+            </div>
+            <div class="card-content-body">
+              <ul class="info-list-symmetric">
+                <li class="info-item">
+                  <span class="info-label"><i data-lucide="user"></i> Nama Lengkap</span>
+                  <span class="info-value">Aldi Septiagi</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label"><i data-lucide="calendar"></i> Tanggal Lahir</span>
+                  <span class="info-value">19 September 2004</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label"><i data-lucide="user-plus"></i> Jenis Kelamin</span>
+                  <span class="info-value">Laki-laki</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label"><i data-lucide="map-pin"></i> Alamat Domisili</span>
+                  <span class="info-value">Jl. Tanjung Wangi, Penjaringan, Jakarta Utara</span>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">
+                    <svg class="brand-svg-mini wa-color" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.16C10.57 20.16 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.05 20.16ZM16.57 14.39C16.32 14.27 15.11 13.67 14.88 13.59C14.66 13.51 14.49 13.47 14.33 13.72C14.16 13.97 13.69 14.52 13.55 14.69C13.4 14.85 13.26 14.88 13.01 14.75C12.76 14.63 11.97 14.37 11.03 13.53C10.29 12.87 9.8 12.06 9.65 11.81C9.51 11.56 9.64 11.43 9.76 11.31C9.87 11.2 10.01 11.02 10.14 10.87C10.26 10.72 10.3 10.62 10.38 10.45C10.47 10.29 10.43 10.14 10.36 10.02C10.3 9.9 9.8 8.68 9.6 8.18C9.39 7.69 9.19 7.76 9.04 7.75C8.9 7.74 8.73 7.74 8.57 7.74C8.4 7.74 8.13 7.8 7.9 8.05C7.67 8.3 7.02 8.91 7.02 10.15C7.02 11.39 7.92 12.58 8.05 12.75C8.17 12.92 9.83 15.48 12.37 16.58C12.97 16.84 13.44 17 13.81 17.11C14.42 17.31 14.97 17.28 15.41 17.21C15.9 17.14 16.92 16.6 17.13 16C17.34 15.41 17.34 14.9 17.28 14.8C17.22 14.69 17.06 14.63 16.81 14.51L16.57 14.39Z"/>
+                    </svg>
+                    WhatsApp
+                  </span>
+                  <a href="https://wa.me/6285770441986" target="_blank" rel="noopener" class="info-link-badge wa-link">0857-7044-1986</a>
+                </li>
+                <li class="info-item">
+                  <span class="info-label">
+                    <svg class="brand-svg-mini ig-color" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    Instagram
+                  </span>
+                  <a href="https://instagram.com/sptgi19_" target="_blank" rel="noopener" class="info-link-badge ig-link">@sptgi19_</a>
+                </li>
+                <li class="info-item">
+                  <span class="info-label"><i data-lucide="check-circle"></i> Status Ketersediaan</span>
+                  <span class="info-value status-badge">Siap Bekerja Segera</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer-action">
+              <a href="#contact" class="btn btn-secondary btn-full">
+                <i data-lucide="send"></i>
+                <span>Ajukan Penawaran Kerja</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Row 2 - Left: 4 Pilar Prinsip & Nilai Kerja -->
+          <div class="card about-card-symmetric reveal-fade-up">
+            <div class="card-icon-header">
+              <div class="icon-box"><i data-lucide="shield-check"></i></div>
+              <div>
+                <h3 class="card-title">4 Pilar Etika & Nilai Kerja</h3>
+                <p class="card-subtitle">Fondasi profesionalitas dalam menyelesaikan tugas</p>
+              </div>
+            </div>
+            <div class="card-content-body">
+              <div class="principles-grid-symmetric">
+                <div class="principle-item">
+                  <div class="p-icon"><i data-lucide="award"></i></div>
+                  <div class="p-content">
+                    <h5>Ulet (Persistent)</h5>
+                    <p>Pantang menyerah dan berdaya juang tinggi dalam mengatasi tantangan kerja harian.</p>
+                  </div>
+                </div>
+                <div class="principle-item">
+                  <div class="p-icon"><i data-lucide="target"></i></div>
+                  <div class="p-content">
+                    <h5>Tekun (Diligent)</h5>
+                    <p>Fokus, cermat, teliti dalam kearsipan, kalkulasi biaya, dan kontrol mutu dokumen.</p>
+                  </div>
+                </div>
+                <div class="principle-item">
+                  <div class="p-icon"><i data-lucide="fast-forward"></i></div>
+                  <div class="p-content">
+                    <h5>Cekatan (Agile)</h5>
+                    <p>Cepat tanggap, efisien dalam mengoperasikan alat kerja serta menyelesaikan tugas tepat waktu.</p>
+                  </div>
+                </div>
+                <div class="principle-item">
+                  <div class="p-icon"><i data-lucide="users"></i></div>
+                  <div class="p-content">
+                    <h5>Kerjasama Tim</h5>
+                    <p>Mampu berkolaborasi aktif, komunikatif, dan menciptakan suasana kerja yang kondusif.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2 - Right: Riwayat Pendidikan Resmi -->
+          <div class="card about-card-symmetric reveal-fade-up">
+            <div class="card-icon-header">
+              <div class="icon-box"><i data-lucide="graduation-cap"></i></div>
+              <div>
+                <h3 class="card-title">Riwayat Pendidikan</h3>
+                <p class="card-subtitle">Jejak akademik dan pembinaan kompetensi</p>
+              </div>
+            </div>
+            <div class="card-content-body">
+              <div class="timeline-symmetric">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-badge">Sekolah Menengah Kejuruan</span>
+                    <h4 class="timeline-title">SMK Pluit Raya</h4>
+                    <p class="timeline-desc">Jurusan Otomatisasi & Tata Kelola Perkantoran (OTKP). Fokus pada administrasi modern, kearsipan, korespondensi, dan aplikasi perkantoran.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-badge">Sekolah Menengah Pertama</span>
+                    <h4 class="timeline-title">SMPN 21 Jakarta Utara</h4>
+                    <p class="timeline-desc">Menyelesaikan pendidikan dasar lanjutan dengan aktif dalam kegiatan sekolah dan pembinaan disiplin diri.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-badge">Sekolah Dasar</span>
+                    <h4 class="timeline-title">SDN Penjaringan 07 Jakarta</h4>
+                    <p class="timeline-desc">Membangun fondasi akademik, karakter budi pekerti, dan kedisiplinan sejak dini.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS SECTION ================= -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">
+            <i data-lucide="cpu"></i>
+            <span>Kompetensi & Keahlian</span>
+          </div>
+          <h2 class="section-title">Keahlian & <span class="gradient-text">Kemampuan</span></h2>
+          <p class="section-subtitle">
+            Kombinasi keterampilan teknis operasional (Hard Skills) dan kecakapan interpersonal (Soft Skills) yang saya miliki.
+          </p>
+        </div>
+
+        <!-- Symmetrical 2-Column Skills Wrapper -->
+        <div class="skills-wrapper-symmetric">
+          <!-- Hard Skills Column -->
+          <div class="card skill-category-card reveal-fade-up">
+            <div class="category-header">
+              <div class="icon-box icon-hard"><i data-lucide="printer"></i></div>
+              <div>
+                <h3 class="category-title">Hard Skills & Teknis Operasional</h3>
+                <p class="category-subtitle">Keterampilan teknis dan pengoperasian peralatan kerja</p>
+              </div>
+            </div>
+
+            <div class="skill-items">
+              <!-- Skill 1 -->
+              <div class="skill-bar-item">
+                <div class="skill-meta">
+                  <span class="skill-name"><i data-lucide="printer"></i> Operasional Mesin Copy, Print, & Scan Dokumen</span>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="--target-width: 95%;"></div>
+                </div>
+                <p class="skill-detail">Pengoperasian mesin fotokopi multi-fungsi, cetak dokumen berbagai format, scanning resolusi tinggi, dan finishing (staples, jilid, laminating).</p>
+              </div>
+
+              <!-- Skill 2 -->
+              <div class="skill-bar-item">
+                <div class="skill-meta">
+                  <span class="skill-name"><i data-lucide="file-check"></i> Otomatisasi & Tata Kelola Perkantoran (OTKP)</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="--target-width: 92%;"></div>
+                </div>
+                <p class="skill-detail">Pembuatan format surat resmi, manajemen surat masuk/keluar, sistem pengarsipan berkas dinamis, dan tata kelola administrasi terpadu.</p>
+              </div>
+
+              <!-- Skill 3 -->
+              <div class="skill-bar-item">
+                <div class="skill-meta">
+                  <span class="skill-name"><i data-lucide="monitor"></i> Microsoft Office (Word, Excel, PPT) & Komputer</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="--target-width: 88%;"></div>
+                </div>
+                <p class="skill-detail">Pengolahan data tabel, entri harga, pembuatan laporan kerja, pengetikan cepat dan rapi, serta pengelolaan file digital.</p>
+              </div>
+
+              <!-- Skill 4 -->
+              <div class="skill-bar-item">
+                <div class="skill-meta">
+                  <span class="skill-name"><i data-lucide="package-check"></i> Logistik Surat & Barang Ekspedisi</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="--target-width: 90%;"></div>
+                </div>
+                <p class="skill-detail">Penerimaan, pengecekan fisik barang, penimbangan paket, entri tarif pengiriman, sortir tujuan, dan penataan gudang penyimpanan.</p>
+              </div>
+
+              <!-- Skill 5 -->
+              <div class="skill-bar-item">
+                <div class="skill-meta">
+                  <span class="skill-name"><i data-lucide="boxes"></i> Kontrol Kualitas & Manajemen Stok Toko</span>
+                  <span class="skill-percent">86%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="--target-width: 86%;"></div>
+                </div>
+                <p class="skill-detail">Pengawasan ketersediaan kertas/tinta, pengecekan barang retur, inventarisasi berkala, dan penataan display area toko.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills Column -->
+          <div class="card skill-category-card reveal-fade-up">
+            <div class="category-header">
+              <div class="icon-box icon-soft"><i data-lucide="heart-handshake"></i></div>
+              <div>
+                <h3 class="category-title">Soft Skills & Karakter Kerja</h3>
+                <p class="category-subtitle">Interaksi sosial, profesionalisme, dan mentalitas kerja</p>
+              </div>
+            </div>
+
+            <div class="skill-cards-grid-symmetric">
+              <div class="soft-card">
+                <div class="soft-icon"><i data-lucide="smile"></i></div>
+                <div class="soft-body">
+                  <h4>Pelayanan Ramah & Sopan</h4>
+                  <p>Memberikan customer experience positif dengan senyum, sapa, dan mendengarkan kebutuhan dengan sabar.</p>
+                </div>
+              </div>
+
+              <div class="soft-card">
+                <div class="soft-icon"><i data-lucide="messages-square"></i></div>
+                <div class="soft-body">
+                  <h4>Interpersonal & Komunikasi</h4>
+                  <p>Kemampuan berkomunikasi santun dan efektif dengan atasan, rekan satu tim, serta pelanggan.</p>
+                </div>
+              </div>
+
+              <div class="soft-card">
+                <div class="soft-icon"><i data-lucide="search-check"></i></div>
+                <div class="soft-body">
+                  <h4>Fokus & Ketelitian Tinggi</h4>
+                  <p>Konsentrasi tinggi dalam membaca instruksi cetak, akurasi tarif pengiriman, dan pencatatan surat.</p>
+                </div>
+              </div>
+
+              <div class="soft-card">
+                <div class="soft-icon"><i data-lucide="users-2"></i></div>
+                <div class="soft-body">
+                  <h4>Kerjasama dalam Tim</h4>
+                  <p>Saling membantu antar rekan kerja saat volume pesanan meningkat agar operasional tetap lancar.</p>
+                </div>
+              </div>
+
+              <div class="soft-card">
+                <div class="soft-icon"><i data-lucide="lightbulb"></i></div>
+                <div class="soft-body">
+                  <h4>Kreatif & Solutif</h4>
+                  <p>Mencari solusi cepat saat kendala teknis mesin, tata letak dokumen, dan perbaikan layanan.</p>
+                </div>
+              </div>
+
+              <div class="soft-card">
+                <div class="soft-icon"><i data-lucide="shield-check"></i></div>
+                <div class="soft-body">
+                  <h4>Disiplin & Tanggung Jawab</h4>
+                  <p>Tepat waktu, memegang amanah dengan jujur, serta menjaga kerapian dan keamanan peralatan toko.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS / EXPERIENCE SECTION ================= -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">
+            <i data-lucide="briefcase"></i>
+            <span>Portofolio & Pengalaman Nyata</span>
+          </div>
+          <h2 class="section-title">Pengalaman & <span class="gradient-text">Project</span></h2>
+          <p class="section-subtitle">
+            Daftar pengalaman kerja, praktik kerja lapangan, dan pencapaian tugas operasional yang pernah saya tangani secara profesional.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-wrapper reveal-fade-up">
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">Semua Portofolio</button>
+            <button class="filter-btn" data-filter="pekerjaan">Pengalaman Kerja</button>
+            <button class="filter-btn" data-filter="operasional">Operasional & Layanan</button>
+            <button class="filter-btn" data-filter="administrasi">Administrasi & OTKP</button>
+          </div>
+        </div>
+
+        <!-- Symmetrical 2x2 Project Grid -->
+        <div class="projects-grid-symmetric" id="projectsGrid">
+          <!-- Card 1: CopyCenter PT Bazic Sukses Abadi -->
+          <article class="project-card reveal-fade-up" data-category="pekerjaan operasional">
+            <div class="project-header">
+              <div class="project-category-badge">Pengalaman Kerja Profesional</div>
+              <span class="project-status">Selesai / Teruji</span>
+            </div>
+            <div class="project-body">
+              <div class="project-company">
+                <i data-lucide="building-2"></i>
+                <span>PT Bazic Sukses Abadi</span>
+              </div>
+              <h3 class="project-title">Staff CopyCenter & Layanan Pelanggan</h3>
+              <p class="project-desc">
+                Bertanggung jawab penuh atas pelayanan operasional cetak harian, menjamin kepuasan pelanggan, serta menjaga inventaris perlengkapan toko.
+              </p>
+              <ul class="project-highlights">
+                <li><i data-lucide="check"></i> Memberikan pelayanan ramah, sopan, dan cepat tanggap kepada setiap customer.</li>
+                <li><i data-lucide="check"></i> Melakukan print berkas warna/BW, scan resolusi tinggi, fotokopi, dan jilid dokumen.</li>
+                <li><i data-lucide="check"></i> Pengawasan, pengecekan ketersediaan stok barang, dan keamanan area toko.</li>
+              </ul>
+            </div>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag-pill">Pelayanan</span>
+                <span class="tag-pill">Print & Scan</span>
+                <span class="tag-pill">Inventory Toko</span>
+              </div>
+              <button class="btn btn-outline btn-sm open-modal-btn" data-project="bazic">
+                <span>Detail Pengalaman</span>
+                <i data-lucide="external-link"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2: PKL PT Pos Indonesia -->
+          <article class="project-card reveal-fade-up" data-category="pekerjaan administrasi">
+            <div class="project-header">
+              <div class="project-category-badge">Praktik Kerja Lapangan (PKL)</div>
+              <span class="project-status">Sertifikasi PKL</span>
+            </div>
+            <div class="project-body">
+              <div class="project-company">
+                <i data-lucide="mail"></i>
+                <span>PT Pos Indonesia (Persero)</span>
+              </div>
+              <h3 class="project-title">Staff Gudang, Pengarsipan Surat & Entri Pengiriman</h3>
+              <p class="project-desc">
+                Mengelola sirkulasi surat masuk dan keluar, input data tarif pengiriman surat dan barang, serta validasi kesesuaian fisik paket secara terstruktur.
+              </p>
+              <ul class="project-highlights">
+                <li><i data-lucide="check"></i> Menerima, mencatat, mengklasifikasi, menyimpan, dan mengeluarkan surat dinas/masyarakat.</li>
+                <li><i data-lucide="check"></i> Mengentri harga dan tarif pengiriman barang/surat ke sistem pos secara teliti.</li>
+                <li><i data-lucide="check"></i> Memastikan kualitas pembungkusan dan kuantitas barang sesuai manifes pengiriman.</li>
+              </ul>
+            </div>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag-pill">PT Pos Indonesia</span>
+                <span class="tag-pill">Entry Tarif</span>
+                <span class="tag-pill">Logistik Surat</span>
+              </div>
+              <button class="btn btn-outline btn-sm open-modal-btn" data-project="pos">
+                <span>Detail Pengalaman</span>
+                <i data-lucide="external-link"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 3: Manajemen Tata Kelola Arsip OTKP -->
+          <article class="project-card reveal-fade-up" data-category="administrasi">
+            <div class="project-header">
+              <div class="project-category-badge">Proyek Kejuruan OTKP</div>
+              <span class="project-status">Studi Kasus Perkantoran</span>
+            </div>
+            <div class="project-body">
+              <div class="project-company">
+                <i data-lucide="folder-tree"></i>
+                <span>SMK Pluit Raya — Lab OTKP</span>
+              </div>
+              <h3 class="project-title">Sistem Pengarsipan & Tata Kelola Dokumen Kantor</h3>
+              <p class="project-desc">
+                Perancangan sistem kearsipan berbasis abjad, nomor, dan perihal untuk mempercepat proses temu kembali (retrieval) dokumen resmi perkantoran.
+              </p>
+              <ul class="project-highlights">
+                <li><i data-lucide="check"></i> Penataan surat masuk & surat keluar menggunakan buku agenda dan kartu kendali.</li>
+                <li><i data-lucide="check"></i> Digitalisasi dokumen penting ke format PDF dengan penamaan standar ISO.</li>
+                <li><i data-lucide="check"></i> Efisiensi pencarian dokumen kembali dalam waktu kurang dari 1 menit.</li>
+              </ul>
+            </div>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag-pill">Pengarsipan</span>
+                <span class="tag-pill">Korespondensi</span>
+                <span class="tag-pill">Administrasi Modern</span>
+              </div>
+              <button class="btn btn-outline btn-sm open-modal-btn" data-project="otkp">
+                <span>Detail Pengalaman</span>
+                <i data-lucide="external-link"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 4: Quality Control & Customer Satisfaction Flow -->
+          <article class="project-card reveal-fade-up" data-category="operasional">
+            <div class="project-header">
+              <div class="project-category-badge">Operasional Percetakan</div>
+              <span class="project-status">Workflow Improvement</span>
+            </div>
+            <div class="project-body">
+              <div class="project-company">
+                <i data-lucide="shield-check"></i>
+                <span>Retail CopyCenter Service</span>
+              </div>
+              <h3 class="project-title">Alur Quality Control Hasil Cetak & Pelayanan Cepat</h3>
+              <p class="project-desc">
+                Inisiatif penerapan alur verifikasi berkas sebelum dicetak (pre-flight check) untuk meminimalisir kertas rusak dan memastikan kepuasan konsumen.
+              </p>
+              <ul class="project-highlights">
+                <li><i data-lucide="check"></i> Pemeriksaan margin, resolusi gambar, dan format warna sebelum cetak massal.</li>
+                <li><i data-lucide="check"></i> Pengurangan limbah cetak salah hingga 40% dan peningkatan kecepatan antrian.</li>
+                <li><i data-lucide="check"></i> Komunikasi proaktif dengan customer mengenai pilihan gramatur kertas dan jenis jilid.</li>
+              </ul>
+            </div>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag-pill">Quality Control</span>
+                <span class="tag-pill">Efisiensi Biaya</span>
+                <span class="tag-pill">Kepuasan Pelanggan</span>
+              </div>
+              <button class="btn btn-outline btn-sm open-modal-btn" data-project="qc">
+                <span>Detail Pengalaman</span>
+                <i data-lucide="external-link"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">
+            <i data-lucide="send"></i>
+            <span>Terhubung Langsung</span>
+          </div>
+          <h2 class="section-title">Hubungi <span class="gradient-text">Saya</span></h2>
+          <p class="section-subtitle">
+            Tertarik untuk menawarkan peluang kerja, wawancara, atau mendiskusikan kualifikasi saya? Silakan hubungi saya melalui jalur di bawah ini.
+          </p>
+        </div>
+
+        <!-- Symmetrical 2-Column Contact Wrapper -->
+        <div class="contact-wrapper-symmetric">
+          
+          <!-- Left Column: Direct Contact Hub Card with Official Logos -->
+          <div class="card contact-hub-card reveal-fade-up">
+            <div class="card-icon-header">
+              <div class="icon-box"><i data-lucide="phone-call"></i></div>
+              <div>
+                <h3 class="card-title">Informasi Kontak Langsung</h3>
+                <p class="card-subtitle">Saluran komunikasi yang aktif dan siap dihubungi kapan saja</p>
+              </div>
+            </div>
+
+            <!-- Symmetrical 2x2 Grid of Channels with WhatsApp & Instagram Official Logos -->
+            <div class="contact-channels-grid">
+              
+              <!-- WhatsApp Card with Official WhatsApp Logo -->
+              <a href="https://wa.me/6285770441986?text=Halo%20Aldi%20Septiagi,%20saya%20melihat%20portfolio%20Anda%20dan%20tertarik%20untuk%20berdiskusi." target="_blank" rel="noopener noreferrer" class="channel-card channel-card-wa">
+                <div class="channel-icon icon-wa">
+                  <!-- Official WhatsApp SVG Logo -->
+                  <svg class="brand-svg-logo" viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.16C10.57 20.16 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.05 20.16ZM16.57 14.39C16.32 14.27 15.11 13.67 14.88 13.59C14.66 13.51 14.49 13.47 14.33 13.72C14.16 13.97 13.69 14.52 13.55 14.69C13.4 14.85 13.26 14.88 13.01 14.75C12.76 14.63 11.97 14.37 11.03 13.53C10.29 12.87 9.8 12.06 9.65 11.81C9.51 11.56 9.64 11.43 9.76 11.31C9.87 11.2 10.01 11.02 10.14 10.87C10.26 10.72 10.3 10.62 10.38 10.45C10.47 10.29 10.43 10.14 10.36 10.02C10.3 9.9 9.8 8.68 9.6 8.18C9.39 7.69 9.19 7.76 9.04 7.75C8.9 7.74 8.73 7.74 8.57 7.74C8.4 7.74 8.13 7.8 7.9 8.05C7.67 8.3 7.02 8.91 7.02 10.15C7.02 11.39 7.92 12.58 8.05 12.75C8.17 12.92 9.83 15.48 12.37 16.58C12.97 16.84 13.44 17 13.81 17.11C14.42 17.31 14.97 17.28 15.41 17.21C15.9 17.14 16.92 16.6 17.13 16C17.34 15.41 17.34 14.9 17.28 14.8C17.22 14.69 17.06 14.63 16.81 14.51L16.57 14.39Z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-type">WhatsApp Langsung</span>
+                  <span class="channel-value">0857-7044-1986</span>
+                  <span class="channel-hint">Klik untuk chat via WhatsApp</span>
+                </div>
+              </a>
+
+              <!-- Email Card -->
+              <a href="mailto:akunkupro@gmail.com?subject=Tawaran%20Pekerjaan%20untuk%20Aldi%20Septiagi" class="channel-card">
+                <div class="channel-icon icon-email">
+                  <i data-lucide="mail"></i>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-type">Email Resmi</span>
+                  <span class="channel-value">akunkupro@gmail.com</span>
+                  <span class="channel-hint">Kirim pesan email formal</span>
+                </div>
+              </a>
+
+              <!-- Instagram Card with Official Instagram Logo -->
+              <a href="https://instagram.com/sptgi19_" target="_blank" rel="noopener noreferrer" class="channel-card channel-card-ig">
+                <div class="channel-icon icon-ig">
+                  <!-- Official Instagram SVG Logo -->
+                  <svg class="brand-svg-logo" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-type">Instagram Resmi</span>
+                  <span class="channel-value">@sptgi19_</span>
+                  <span class="channel-hint">Kunjungi profil Instagram</span>
+                </div>
+              </a>
+
+              <!-- Location Card -->
+              <div class="channel-card static-channel">
+                <div class="channel-icon icon-loc">
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-type">Domisili Kerja</span>
+                  <span class="channel-value">Penjaringan, Jakarta Utara</span>
+                  <span class="channel-hint">Siap kerja di area Jabodetabek</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Balanced Status Banner at Bottom of Left Column -->
+            <div class="contact-status-box">
+              <div class="status-indicator-dot"></div>
+              <div class="status-text">
+                <strong>Status Ketersediaan: Terbuka untuk Peluang Kerja</strong>
+                <p>Siap untuk posisi Staff Administrasi, CopyCenter, Staff Gudang/Logistik, ataupun Operator Komputer & Dokumen.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form Card -->
+          <div class="card contact-form-card reveal-fade-up">
+            <div class="card-icon-header">
+              <div class="icon-box"><i data-lucide="mail-plus"></i></div>
+              <div>
+                <h3 class="card-title">Kirim Pesan Cepat</h3>
+                <p class="card-subtitle">Isi formulir dan kirimkan langsung atau teruskan via WhatsApp</p>
+              </div>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Nama Lengkap / Perusahaan *</label>
+                <div class="input-wrapper">
+                  <i data-lucide="user" class="input-icon"></i>
+                  <input type="text" id="senderName" name="senderName" class="form-control" placeholder="Contoh: HRD PT Berkah Sentosa" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Email Anda *</label>
+                  <div class="input-wrapper">
+                    <i data-lucide="mail" class="input-icon"></i>
+                    <input type="email" id="senderEmail" name="senderEmail" class="form-control" placeholder="nama@perusahaan.com" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="senderPhone" class="form-label">No. WhatsApp</label>
+                  <div class="input-wrapper">
+                    <i data-lucide="phone" class="input-icon"></i>
+                    <input type="tel" id="senderPhone" name="senderPhone" class="form-control" placeholder="08xxxxxxxxxx">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subjectSelect" class="form-label">Keperluan / Subjek Pesan *</label>
+                <div class="input-wrapper">
+                  <i data-lucide="briefcase" class="input-icon"></i>
+                  <select id="subjectSelect" name="subjectSelect" class="form-control" required>
+                    <option value="" disabled selected>Pilih Keperluan</option>
+                    <option value="Tawaran Pekerjaan (Full-Time / Kontrak)">Tawaran Pekerjaan (Full-Time / Kontrak)</option>
+                    <option value="Undangan Wawancara Kerja">Undangan Wawancara Kerja</option>
+                    <option value="Pekerjaan Operasional / Administrasi">Pekerjaan Operasional / Administrasi</option>
+                    <option value="Tanya Pengalaman & Kualifikasi">Tanya Pengalaman & Kualifikasi</option>
+                    <option value="Lainnya">Lainnya</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="messageText" class="form-label">Isi Pesan *</label>
+                <div class="input-wrapper text-area-wrapper">
+                  <i data-lucide="message-square" class="input-icon textarea-icon"></i>
+                  <textarea id="messageText" name="messageText" rows="3" class="form-control" placeholder="Tuliskan detail pesan, lowongan, atau pertanyaan Anda di sini..." required></textarea>
+                </div>
+              </div>
+
+              <div class="form-actions-symmetric">
+                <button type="submit" class="btn btn-primary" id="submitFormBtn">
+                  <i data-lucide="send"></i>
+                  <span>Kirim Pesan</span>
+                </button>
+                <button type="button" class="btn btn-wa-action" id="sendViaWaBtn">
+                  <svg class="brand-svg-btn" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.16C10.57 20.16 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.05 20.16ZM16.57 14.39C16.32 14.27 15.11 13.67 14.88 13.59C14.66 13.51 14.49 13.47 14.33 13.72C14.16 13.97 13.69 14.52 13.55 14.69C13.4 14.85 13.26 14.88 13.01 14.75C12.76 14.63 11.97 14.37 11.03 13.53C10.29 12.87 9.8 12.06 9.65 11.81C9.51 11.56 9.64 11.43 9.76 11.31C9.87 11.2 10.01 11.02 10.14 10.87C10.26 10.72 10.3 10.62 10.38 10.45C10.47 10.29 10.43 10.14 10.36 10.02C10.3 9.9 9.8 8.68 9.6 8.18C9.39 7.69 9.19 7.76 9.04 7.75C8.9 7.74 8.73 7.74 8.57 7.74C8.4 7.74 8.13 7.8 7.9 8.05C7.67 8.3 7.02 8.91 7.02 10.15C7.02 11.39 7.92 12.58 8.05 12.75C8.17 12.92 9.83 15.48 12.37 16.58C12.97 16.84 13.44 17 13.81 17.11C14.42 17.31 14.97 17.28 15.41 17.21C15.9 17.14 16.92 16.6 17.13 16C17.34 15.41 17.34 14.9 17.28 14.8C17.22 14.69 17.06 14.63 16.81 14.51L16.57 14.39Z"/>
+                  </svg>
+                  <span>Kirim ke WhatsApp</span>
+                </button>
+              </div>
+            </form>
+
+            <!-- Toast / Feedback alert -->
+            <div class="form-toast" id="formToast" role="alert">
+              <i data-lucide="check-circle" class="toast-icon"></i>
+              <div class="toast-content">
+                <strong class="toast-title">Pesan Berhasil Disiapkan!</strong>
+                <p class="toast-desc">Terima kasih atas minat Anda. Anda juga dapat mengirimkannya via WhatsApp untuk respon instan.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top-symmetric">
+        
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-col footer-col-brand">
+          <div class="brand-group">
+            <span class="brand-badge">AS</span>
+            <span class="brand-name">Aldi<span class="brand-accent">Septiagi</span></span>
+          </div>
+          <p class="footer-tagline">
+            Website Portfolio Pribadi Modern, Aesthetic, Elegan & Simetris. Dirancang dengan standar profesionalisme tinggi.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-heading">Navigasi Halaman</h4>
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Keahlian & Skills</a></li>
+            <li><a href="#projects">Pengalaman & Project</a></li>
+            <li><a href="#contact">Kontak Saya</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Direct Contact Information -->
+        <div class="footer-col">
+          <h4 class="footer-col-heading">Kontak Resmi</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg class="brand-svg-mini wa-color" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.16C10.57 20.16 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.05 20.16ZM16.57 14.39C16.32 14.27 15.11 13.67 14.88 13.59C14.66 13.51 14.49 13.47 14.33 13.72C14.16 13.97 13.69 14.52 13.55 14.69C13.4 14.85 13.26 14.88 13.01 14.75C12.76 14.63 11.97 14.37 11.03 13.53C10.29 12.87 9.8 12.06 9.65 11.81C9.51 11.56 9.64 11.43 9.76 11.31C9.87 11.2 10.01 11.02 10.14 10.87C10.26 10.72 10.3 10.62 10.38 10.45C10.47 10.29 10.43 10.14 10.36 10.02C10.3 9.9 9.8 8.68 9.6 8.18C9.39 7.69 9.19 7.76 9.04 7.75C8.9 7.74 8.73 7.74 8.57 7.74C8.4 7.74 8.13 7.8 7.9 8.05C7.67 8.3 7.02 8.91 7.02 10.15C7.02 11.39 7.92 12.58 8.05 12.75C8.17 12.92 9.83 15.48 12.37 16.58C12.97 16.84 13.44 17 13.81 17.11C14.42 17.31 14.97 17.28 15.41 17.21C15.9 17.14 16.92 16.6 17.13 16C17.34 15.41 17.34 14.9 17.28 14.8C17.22 14.69 17.06 14.63 16.81 14.51L16.57 14.39Z"/>
+              </svg>
+              <span>0857-7044-1986</span>
+            </li>
+            <li><i data-lucide="mail"></i> akunkupro@gmail.com</li>
+            <li>
+              <svg class="brand-svg-mini ig-color" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span>@sptgi19_</span>
+            </li>
+            <li><i data-lucide="map-pin"></i> Penjaringan, Jakarta Utara</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-symmetric">
+        <p class="copyright">
+          &copy; <span id="currentYear">2026</span> <strong>Aldi Septiagi</strong>. Seluruh hak cipta dilindungi.
+        </p>
+        <div class="footer-social-icons">
+          <a href="https://wa.me/6285770441986" target="_blank" rel="noopener" aria-label="WhatsApp" class="footer-icon-wa">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.16C10.57 20.16 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.05 20.16ZM16.57 14.39C16.32 14.27 15.11 13.67 14.88 13.59C14.66 13.51 14.49 13.47 14.33 13.72C14.16 13.97 13.69 14.52 13.55 14.69C13.4 14.85 13.26 14.88 13.01 14.75C12.76 14.63 11.97 14.37 11.03 13.53C10.29 12.87 9.8 12.06 9.65 11.81C9.51 11.56 9.64 11.43 9.76 11.31C9.87 11.2 10.01 11.02 10.14 10.87C10.26 10.72 10.3 10.62 10.38 10.45C10.47 10.29 10.43 10.14 10.36 10.02C10.3 9.9 9.8 8.68 9.6 8.18C9.39 7.69 9.19 7.76 9.04 7.75C8.9 7.74 8.73 7.74 8.57 7.74C8.4 7.74 8.13 7.8 7.9 8.05C7.67 8.3 7.02 8.91 7.02 10.15C7.02 11.39 7.92 12.58 8.05 12.75C8.17 12.92 9.83 15.48 12.37 16.58C12.97 16.84 13.44 17 13.81 17.11C14.42 17.31 14.97 17.28 15.41 17.21C15.9 17.14 16.92 16.6 17.13 16C17.34 15.41 17.34 14.9 17.28 14.8C17.22 14.69 17.06 14.63 16.81 14.51L16.57 14.39Z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com/sptgi19_" target="_blank" rel="noopener" aria-label="Instagram" class="footer-icon-ig">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="mailto:akunkupro@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= BACK TO TOP BUTTON ================= -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Kembali ke atas">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- ================= PROJECT DETAIL MODAL ================= -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-badge" id="modalBadge">Kategori Proyek</div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Tutup Detail">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3 class="modal-title" id="modalTitle">Judul Pekerjaan / Proyek</h3>
+        <div class="modal-company-info" id="modalCompany">
+          <i data-lucide="building-2"></i> <span>Perusahaan</span>
+        </div>
+        <div class="modal-divider"></div>
+        
+        <h4 class="modal-section-heading">Deskripsi Peran & Tanggung Jawab:</h4>
+        <p class="modal-text" id="modalDescription">Deskripsi lengkap tugas dan peranan...</p>
+
+        <h4 class="modal-section-heading">Poin Pekerjaan & Tugas Kunci:</h4>
+        <ul class="modal-list" id="modalList">
+          <!-- Will be filled dynamically -->
+        </ul>
+
+        <h4 class="modal-section-heading">Keahlian yang Diterapkan:</h4>
+        <div class="modal-tags" id="modalTags">
+          <!-- Will be filled dynamically -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#contact" class="btn btn-primary" id="modalContactBtn">
+          <i data-lucide="send"></i>
+          <span>Hubungi Mengenai Peran Ini</span>
+        </a>
+        <button class="btn btn-outline" id="modalCloseBtnFooter">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CV VIEWER MODAL ================= -->
+  <div class="modal-overlay" id="cvModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container cv-modal-container">
+      <div class="modal-header">
+        <div class="modal-badge"><i data-lucide="file-check"></i> Dokumen Resmi CV Aldi Septiagi</div>
+        <button class="modal-close-btn" id="cvModalCloseBtn" aria-label="Tutup CV">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="modal-body cv-modal-body">
+        <div class="cv-preview-wrapper">
+          <img src="assets/cv.jpg" alt="Curriculum Vitae Aldi Septiagi" class="cv-preview-image">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="assets/cv.jpg" download="CV_Aldi_Septiagi.jpg" class="btn btn-primary">
+          <i data-lucide="download"></i>
+          <span>Unduh Gambar CV</span>
+        </a>
+        <a href="https://wa.me/6285770441986?text=Halo%20Aldi,%20saya%20sudah%20melihat%20CV%20Anda%20dan%20ingin%20mengundang%20wawancara." target="_blank" rel="noopener noreferrer" class="btn btn-wa">
+          <svg class="brand-svg-btn" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.16C10.57 20.16 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.05 20.16ZM16.57 14.39C16.32 14.27 15.11 13.67 14.88 13.59C14.66 13.51 14.49 13.47 14.33 13.72C14.16 13.97 13.69 14.52 13.55 14.69C13.4 14.85 13.26 14.88 13.01 14.75C12.76 14.63 11.97 14.37 11.03 13.53C10.29 12.87 9.8 12.06 9.65 11.81C9.51 11.56 9.64 11.43 9.76 11.31C9.87 11.2 10.01 11.02 10.14 10.87C10.26 10.72 10.3 10.62 10.38 10.45C10.47 10.29 10.43 10.14 10.36 10.02C10.3 9.9 9.8 8.68 9.6 8.18C9.39 7.69 9.19 7.76 9.04 7.75C8.9 7.74 8.73 7.74 8.57 7.74C8.4 7.74 8.13 7.8 7.9 8.05C7.67 8.3 7.02 8.91 7.02 10.15C7.02 11.39 7.92 12.58 8.05 12.75C8.17 12.92 9.83 15.48 12.37 16.58C12.97 16.84 13.44 17 13.81 17.11C14.42 17.31 14.97 17.28 15.41 17.21C15.9 17.14 16.92 16.6 17.13 16C17.34 15.41 17.34 14.9 17.28 14.8C17.22 14.69 17.06 14.63 16.81 14.51L16.57 14.39Z"/>
+          </svg>
+          <span>Undang Wawancara (WA)</span>
+        </a>
+        <button class="btn btn-outline" id="cvModalCloseBtnFooter">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
